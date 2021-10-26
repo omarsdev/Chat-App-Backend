@@ -26,7 +26,7 @@ module.exports = (sequelize, DataTypes) => {
 
           return type === "text"
             ? content
-            : `${config.appUrl}:${config.appPort}/chat/${id}/${content}`;
+            : `${config.appDomain}/chat/${id}/${content}`;
         },
       },
       chatId: DataTypes.INTEGER,
